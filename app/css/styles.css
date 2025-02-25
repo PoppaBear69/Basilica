@@ -1,67 +1,165 @@
+/* Global Variables */
 html {
-    --basil-green: #88a308;
-    --dark-gray: #333333;
-    --light-gray: #999999;
-    --orange: #f90;
-    --red: #f00;
-    --max-width: 840px;
-    --breakpoint: 640px;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  ::selection {
-    background: var(--basil-green);
-    color: #fff;
-  }
-  
-  body {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  --basil-green: #88a308;
+  --dark-gray: #333333;
+  --light-gray: #e4e1d1;
+  --light-green: #f5faef;
+  --orange: #f90;
+  --light-orange: #ebbd4e;
+  --red: #f00;
+  --max-width: 840px;
+  --radius: 4px;
+}
+
+/* Reset Default Spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+  background: var(--basil-green);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers "Basilica!" */
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 70px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure "Basilica!" stays centered */
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; /* Centers text inside h1 */
+  align-items: center;
+}
+
+/* Move Beta tag to the right */
+.beta {
+  position: absolute;
+  right: 20px;
+  background: var(--orange);
+  color: white;
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Prevent content from hiding under fixed header */
+body {
+  padding-top: 80px;
+  background-color: var(--light-green);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-    color: var(--dark-gray);
-    max-width: var(--max-width);
-    margin: 0 auto;
-    margin-top: 24px;
-  }
-  
-  h2,
-  h3 {
-    color: var(--basil-green);
-    margin: 8px 0;
-    font-size: 1.4rem;
-    letter-spacing: -1px;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  a {
-    color: var(--orange);
-    text-decoration: none;
-    transition: color 0.5s linear;
-  }
-  
-  a:hover {
-    color: var(--red);
-  }
-  
-  li > h4 {
-    margin-top: 12px;
-  }
-  
-  aside li {
-    list-style: none;
-  }
-  
-  article li,
-  article ol {
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  
+  line-height: 1.5;
+  color: var(--dark-gray);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: var(--light-gray);
+}
+
+nav p {
+  margin: 0;
+  font-weight: bold;
+  color: var(--dark-gray);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  background: var(--light-orange);
+  color: var(--dark-gray);
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background: var(--orange);
+  color: white;
+}
+
+/* MAIN CONTENT - TWO COLUMN LAYOUT */
+/* MAIN CONTENT - SHIFTED RIGHT */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-left: 80px; /* Adds white space on the left */
+}
+
+
+/* LEFT COLUMN: IMAGE & RECIPE */
+.content article {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* IMAGE STYLING */
+article img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--radius);
+}
+
+/* RIGHT COLUMN: SIMILAR RECIPES */
+.content aside {
+  flex: 1;
+  max-width: 50%;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  background: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+/* FOOTER LINK */
+footer a {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--red);
+}

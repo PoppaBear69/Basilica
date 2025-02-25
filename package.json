@@ -1,0 +1,23 @@
+{
+  "name": "basilica",
+  "version": "1.0.0",
+  "description": "- [Basilica!](#basilica)   - [Homework](#homework)   - [Goals](#goals)   - [Initialize GIT with .gitignore](#initialize-git-with-gitignore)   - [NPM Initialization and Installs](#npm-initialization-and-installs)   - [Starter HTML](#starter-html)     - [Starter CSS](#starter-css)   - [Images](#images)   - [Aside - Image Optimization](#aside---image-optimization)   - [Flex Layout](#flex-layout)   - [The Branding Header](#the-branding-header)     - [Custom Fonts](#custom-fonts)     - [Header: Responsive Design](#header-responsive-design)   - [Navigation](#navigation)     - [Nav Links and Gradients](#nav-links-and-gradients)   - [CSS Grid](#css-grid)     - [A Note on Refactoring](#a-note-on-refactoring)   - [JavaScript](#javascript)     - [Aside: Demo Arrays in Node](#aside-demo-arrays-in-node)     - [Add a Script](#add-a-script)   - [JavaScript Popover](#javascript-popover)   - [DOM Scripting Methods Used](#dom-scripting-methods-used)     - [Matches](#matches)     - [Add Another Close Method](#add-another-close-method)     - [Adding Animation to the Modal](#adding-animation-to-the-modal)   - [A Dynamic Popover](#a-dynamic-popover)   - [Notes](#notes)   - [Expressions](#expressions)   - [Statements](#statements)",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync app -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/POPPABEAR69/Basilica.git"
+  },
+  "keywords": [],
+  "author": "Thurman Long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/POPPABEAR69/Basilica/issues"
+  },
+  "homepage": "https://github.com/POPPABEAR69/Basilica#readme",
+  "dependencies": {
+    "browser-sync": "^3.0.3"
+  }
+}
