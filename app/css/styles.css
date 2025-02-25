@@ -1,4 +1,3 @@
-/* Global Variables */
 html {
   --basil-green: #88a308;
   --dark-gray: #333333;
@@ -11,20 +10,18 @@ html {
   --radius: 4px;
 }
 
-/* Reset Default Spacing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* HEADER */
 header {
   background: var(--basil-green);
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centers "Basilica!" */
+  justify-content: center;
   padding: 20px;
   width: 100%;
   position: fixed;
@@ -35,18 +32,16 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure "Basilica!" stays centered */
 header h1 {
   font-size: 2rem;
   margin: 0;
   text-align: center;
   flex-grow: 1;
   display: flex;
-  justify-content: center; /* Centers text inside h1 */
+  justify-content: center;
   align-items: center;
 }
 
-/* Move Beta tag to the right */
 .beta {
   position: absolute;
   right: 20px;
@@ -60,7 +55,6 @@ header h1 {
   text-decoration: none;
 }
 
-/* Prevent content from hiding under fixed header */
 body {
   padding-top: 80px;
   background-color: var(--light-green);
@@ -72,7 +66,6 @@ body {
   margin: 0 auto;
 }
 
-/* NAVIGATION */
 nav {
   display: flex;
   align-items: center;
@@ -109,8 +102,6 @@ nav ul li a:hover {
   color: white;
 }
 
-/* MAIN CONTENT - TWO COLUMN LAYOUT */
-/* MAIN CONTENT - SHIFTED RIGHT */
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -118,17 +109,14 @@ nav ul li a:hover {
   align-items: flex-start;
   max-width: 700px;
   margin: 0 auto;
-  margin-left: 80px; /* Adds white space on the left */
+  margin-left: 80px;
 }
 
-
-/* LEFT COLUMN: IMAGE & RECIPE */
 .content article {
   flex: 1;
   max-width: 50%;
 }
 
-/* IMAGE STYLING */
 article img {
   width: 100%;
   max-width: 250px;
@@ -138,14 +126,12 @@ article img {
   border-radius: var(--radius);
 }
 
-/* RIGHT COLUMN: SIMILAR RECIPES */
 .content aside {
   flex: 1;
   max-width: 50%;
   padding: 10px;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
@@ -154,7 +140,6 @@ footer {
   color: var(--dark-gray);
 }
 
-/* FOOTER LINK */
 footer a {
   color: var(--orange);
   text-decoration: none;
